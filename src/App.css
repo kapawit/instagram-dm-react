@@ -1,38 +1,242 @@
-.App {
+/* @kapawit */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+}
+
+
+/* top nav */
+nav {
+  z-index: 1;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.topnav {
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  max-width: 100rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.topnav .nav-brand {
+  height: 100%;
+  width: 31%;
+  padding-left: 10px;
+  position: relative;
+}
+
+.nav-brand .brand {
+  zoom: 0.6;
+  width: 181px;
+  height: 52px;
+  display: block;
+  background: url('./ig-sprite.png') 0px -179px;
+}
+
+.topnav .nav-search {
+  width: 31%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.nav-search input {
+  height: 25px;
+  width: 220px;
+  border: #d3d3d3 solid 1px;
+  background-color: #fafafa;
+
+}
+
+.nav-search input::-webkit-input-placeholder {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topnav .nav-icon {
+  width: 31%;
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.nav-icon .sprite {
+  width: 23px;
+  height: 23px;
+  position: relative;
+  margin: 0px 10px 0px;
+  background: url('./ig-sprite.png') no-repeat;
+}
+
+#home {
+  background-position: 1px -450px;
+}
+
+#inbox {
+  background-position: -21px -450px;
+}
+
+#explore {
+  background-position: -45px -452px;
+}
+
+#activity {
+  background-position: -68px -451px;
+}
+
+#profile {
+  background-position: -94px -452px;
+}
+
+
+.dropdown-content {
+  top: 40px;
+  z-index: 1;
+  display: none;
+  min-width: 210px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.dropdown-content .dropdown-link {
+  float: none;
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 10px 15px 12px 44px;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.dropdown-content .dropdown-link:hover {
+  background-color: #fafafa;
+}
+
+.dropdown-content .logout {
+  float: none;
+  display: block;
+  color: black;
+  text-align: left;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 13px 15px 12px 20px;
+}
+.dropdown-icon {
+  zoom: 0.8;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin: 15px 15px 0px;
+  background: url('./ig-sprite.png') no-repeat;
+}
+
+#dropdown-profile {
+  background-position: -143px -451px;
+}
+#dropdown-saved {
+  background-position: -194px -451px;
+}
+#dropdown-setting {
+  background-position: -116px -451px;
+}
+#dropdown-switch {
+  background-position: -167px -451px;
+}
+
+.dropdown-content .triangle {
+  width: 0;
+  height: 0;
+  top: -20px;
+  right: 10px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #fff;
+}
+
+.show {
+  display: block;
+}
+
+/* content */
+.content-wrapper {
+  height: 600px;
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 8rem 3rem 0rem 3rem;
+}
+
+.message-box {
+  height: 100%;
+  border-radius: 3px;
+  background-color: #fff;
+  border: #d3d3d3 solid 1px;
+  display: flex;
+}
+
+.message-box .contact-list {
+  width: 38%;
+}
+.contact-list .account-list {
+  height: 60px;
+  padding: 10px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: #d3d3d3 solid 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.account-list h2 {
+  margin-right: 10px;
+}
+.account-list span {
+  zoom: 0.8;
+  width: 25px;
+  height: 20px;
+  transform: rotate(270deg);
+  background: url('./ig-sprite.png') no-repeat;
+  background-position: -414px -132px;
+}
+.message-box .message-content {
+  width: 62%;
+  border-left: #d3d3d3 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message-content span.empty-icon {
+  zoom: 2;
+  width: 22px;
+  height: 23px;
+  background: url('./ig-sprite.png') no-repeat;
+  background-position: -22px -453px;
 }
