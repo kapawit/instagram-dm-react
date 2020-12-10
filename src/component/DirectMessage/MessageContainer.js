@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import Message from './Message';
-import './Dm.css';
 
 class MessageContainer extends Component {
   constructor(props) {

@@ -1,9 +1,11 @@
 import React, {Component} from "react";
 import MessageContainer from "./MessageContainer";
 import ContactContainer from "./ContactContainer";
-import './Dm.css';
+import './DirectMessage.css';
+import RandomImg from '../../component/RandomImg'
 
-class Content extends Component {
+
+class DirectMessage extends Component {
 
   render() {
     return (
@@ -29,4 +31,4 @@ class Content extends Component {
     );
   }
 }
-export default Content;
+export default DirectMessage;

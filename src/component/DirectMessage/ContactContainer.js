@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import './Dm.css';
+import GetRandomImg from "../RandomImg";
 
 class ContactContainer extends Component {
   render() {
@@ -9,17 +9,17 @@ class ContactContainer extends Component {
       <ul className="contact">
         <li className="active">
             <a  href="#">
-            <img src="https://picsum.photos/id/1066/200"/>
+            <img src={GetRandomImg(400)}/>
             <div>
               <h3>User Aktif</h3>
               <p>lorem ipsum dolor sir amte consecture</p>
             </div>
             </a>
-          </li>
+        </li>
         { names.map(name => (  
           <li>
             <a  href="#">
-            <img src="https://picsum.photos/id/1066/200"/>
+            <img src={GetRandomImg(400)}/>
             <div>
               <h3>{name}</h3>
               <p>lorem ipsum dolor sir amte consecture</p>

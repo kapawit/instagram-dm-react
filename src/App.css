@@ -25,4 +25,291 @@ body {
 
 .wrapper {
   min-height: 100vh;
+  overflow-y: scroll;
+}
+
+.content-wrapper {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 8rem 3rem 0rem 3rem;
+}
+
+/* img loading */
+.smooth-image {
+  transition: opacity 1s;
+}
+.image-visible {
+  opacity: 1;
+}
+.image-hidden {
+  opacity: 0;
+}
+
+/* Navbar */
+/* top nav */
+nav {
+  z-index: 1;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.topnav {
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  max-width: 100rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.topnav .nav-brand {
+  height: 100%;
+  width: 31%;
+  padding-left: 10px;
+  position: relative;
+}
+
+.nav-brand .brand {
+  zoom: 0.6;
+  width: 181px;
+  height: 52px;
+  display: block;
+  background: url("../src/assets/ig-sprite.png") 0px -179px;
+}
+
+.topnav .nav-search {
+  width: 31%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.nav-search input {
+  height: 25px;
+  width: 220px;
+  border: #d3d3d3 solid 1px;
+  background-color: #fafafa;
+}
+
+.nav-search input:focus {
+  outline: none;
+}
+
+.nav-search input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.topnav .nav-icon {
+  width: 31%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-icon .sprite {
+  width: 23px;
+  height: 23px;
+  position: relative;
+  margin: 0px 10px 0px;
+  background: url("../src/assets/ig-sprite.png") no-repeat;
+}
+
+#home {
+  background-position: 1px -450px;
+}
+
+#inbox {
+  background-position: -21px -450px;
+}
+
+#explore {
+  background-position: -45px -452px;
+}
+
+#activity {
+  background-position: -68px -451px;
+}
+
+#profile {
+  background-position: -94px -452px;
+}
+
+.dropdown-content {
+  top: 40px;
+  z-index: 1;
+  display: none;
+  min-width: 210px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.dropdown-content .dropdown-link {
+  float: none;
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 10px 15px 12px 44px;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.dropdown-content .dropdown-link:hover {
+  background-color: #fafafa;
+}
+
+.dropdown-content .logout {
+  float: none;
+  display: block;
+  color: black;
+  text-align: left;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 13px 15px 12px 20px;
+}
+
+.dropdown-icon {
+  zoom: 0.8;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin: 15px 15px 0px;
+  background: url("../src/assets/ig-sprite.png") no-repeat;
+}
+
+#dropdown-profile {
+  background-position: -143px -451px;
+}
+
+#dropdown-saved {
+  background-position: -194px -451px;
+}
+
+#dropdown-setting {
+  background-position: -116px -451px;
+}
+
+#dropdown-switch {
+  background-position: -167px -451px;
+}
+
+.dropdown-content .triangle {
+  width: 0;
+  height: 0;
+  top: -20px;
+  right: 10px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #fff;
+}
+
+.show {
+  display: block;
+}
+
+/* handling img profle */
+
+.img-profile-sm {
+  height: 40px;
+  border-radius: 50%;
+  border: #fafafa solid 2px;
+}
+
+.img-profile-md {
+  height: 50px;
+  border-radius: 50%;
+  border: solid white 2px;
+  border: #fafafa solid 2px;
+}
+
+.img-profile-lg {
+  height: 60px;
+  border-radius: 50%;
+  border: #fafafa solid 2px;
+}
+
+/* handle layout account */
+
+.account-sm {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.account-id-container {
+  width: 85%;
+  margin-left: 20px;
+}
+
+.account-id-container .id {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-follow-sm {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0095f6;
+  text-decoration: none;
+}
+
+/* btn more */
+.btn-more {
+  padding: 5px;
+  transform: rotate(90deg);
+}
+
+.btn-more::after {
+  content: "\2807";
+  font-size: 3rem;
+}
+/* account-md */
+
+.account-md {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 25px;
+  position: fixed;
+  max-width: inherit;
+  align-items: center;
+}
+
+.account-md a {
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.account-md p {
+  font-size: 1.2rem;
+  color: #b9b8b8;
+}
+
+/* has story class */
+.has-story {
+  padding: 2px;
+  display: flex;
+  position: relative;
+  border-radius: 50%;
+  align-items: center;
+  background: linear-gradient(to left, rgb(252, 19, 116), rgb(247, 100, 2));
+  margin: 5px 5px 5px 5px;
+}
+
+.story-item {
+  display: block;
+  text-align: center;
+}
+.story-item p {
+  font-size: 1.3rem;
 }
