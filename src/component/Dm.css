@@ -30,7 +30,7 @@ nav {
   width: 181px;
   height: 52px;
   display: block;
-  background: url('../assets/ig-sprite.png') 0px -179px;
+  background: url("../assets/ig-sprite.png") 0px -179px;
 }
 
 .topnav .nav-search {
@@ -45,7 +45,6 @@ nav {
   width: 220px;
   border: #d3d3d3 solid 1px;
   background-color: #fafafa;
-
 }
 
 .nav-search input:focus {
@@ -68,7 +67,7 @@ nav {
   height: 23px;
   position: relative;
   margin: 0px 10px 0px;
-  background: url('../assets/ig-sprite.png') no-repeat;
+  background: url("../assets/ig-sprite.png") no-repeat;
 }
 
 #home {
@@ -90,7 +89,6 @@ nav {
 #profile {
   background-position: -94px -452px;
 }
-
 
 .dropdown-content {
   top: 40px;
@@ -133,7 +131,7 @@ nav {
   height: 25px;
   position: absolute;
   margin: 15px 15px 0px;
-  background: url('../assets/ig-sprite.png') no-repeat;
+  background: url("../assets/ig-sprite.png") no-repeat;
 }
 
 #dropdown-profile {
@@ -169,14 +167,14 @@ nav {
 
 /* content */
 .content-wrapper {
-  height: 600px;
+  height: 100vh;
   margin: 0 auto;
   max-width: 100rem;
   padding: 8rem 3rem 0rem 3rem;
 }
 
 .message-box {
-  height: 100%;
+  height: 98%;
   border-radius: 3px;
   background-color: #fff;
   border: #d3d3d3 solid 1px;
@@ -188,10 +186,13 @@ nav {
   min-width: 300px;
   background-color: #fff;
   border-right: #d3d3d3 solid 1px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-list .account-list {
   height: 60px;
+  order: 1;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -213,7 +214,7 @@ nav {
   border: none;
   cursor: pointer;
   margin-left: 10px;
-  background: url('../assets/ig-sprite.png') no-repeat;
+  background: url("../assets/ig-sprite.png") no-repeat;
   background-position: -357px -333px;
 }
 
@@ -227,7 +228,7 @@ nav {
   border: none;
   cursor: pointer;
   justify-content: flex-end;
-  background: url('../assets/ig-sprite.png') no-repeat;
+  background: url("../assets/ig-sprite.png") no-repeat;
   background-position: -223px -450px;
 }
 
@@ -236,6 +237,7 @@ nav {
 }
 
 .menu-tab {
+  order: 2;
   width: 100%;
   height: 40px;
   border-bottom: #d3d3d3 solid 1px;
@@ -264,9 +266,9 @@ nav {
 
 /* Contact list */
 ul.contact {
+  order: 3;
   overflow: scroll;
   overflow-x: hidden;
-  height: 420px;
 }
 
 .contact li {
@@ -319,7 +321,7 @@ ul.contact {
   height: 58px;
   margin-top: 60px;
   position: absolute;
-  background: url('../assets/ig-sprite.png') no-repeat;
+  background: url("../assets/ig-sprite.png") no-repeat;
   background-position: -371px -403px;
 }
 
@@ -358,11 +360,14 @@ ul.contact {
 /* Direct message  */
 .message-container {
   width: 62%;
+  display: flex;
+  flex-direction: column;
 }
 
 .message-container .header-message {
-  height: 60px;
   width: 100%;
+  order: 1;
+  height: 60px;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -377,10 +382,9 @@ ul.contact {
   border: none;
   cursor: pointer;
   justify-content: flex-end;
-  background: url('../assets/ig-sprite.png') no-repeat;
+  background: url("../assets/ig-sprite.png") no-repeat;
   background-position: -251px -448px;
 }
-
 
 .header-message .img-profile {
   display: flex;
@@ -407,9 +411,9 @@ ul.contact {
   font-size: 1.2rem;
 }
 
-
 .message-container .input-message {
   height: 70px;
+  order: 3;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -430,7 +434,7 @@ ul.contact {
   border: none;
   cursor: pointer;
   margin: 0px 10px 0px 20px;
-  background: url('../assets/ig-sprite.png') no-repeat;
+  background: url("../assets/ig-sprite.png") no-repeat;
   background-position: -282px -448px;
 }
 
@@ -440,7 +444,7 @@ ul.contact {
   border: none;
   cursor: pointer;
   margin: 0px 10px 0px 10px;
-  background: url('../assets/ig-sprite.png') no-repeat;
+  background: url("../assets/ig-sprite.png") no-repeat;
   background-position: -313px -447px;
 }
 
@@ -450,7 +454,7 @@ ul.contact {
   border: none;
   cursor: pointer;
   margin: 0px 10px 0px 0px;
-  background: url('../assets/ig-sprite.png') no-repeat;
+  background: url("../assets/ig-sprite.png") no-repeat;
   background-position: -344px -448px;
 }
 
@@ -466,11 +470,7 @@ ul.contact {
 
 /* chatbox */
 .message-container .chat-box {
-  position: relative;
-  height: 390px;
-}
-
-.chat-box {
+  order: 2;
   padding: 20px;
   font-size: 1.3rem;
   overflow-y: scroll;
@@ -482,7 +482,6 @@ ul.contact {
   margin-bottom: 5px;
   align-items: center;
   justify-content: flex-end;
-
 }
 
 .chat-me p {

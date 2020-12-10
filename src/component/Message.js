@@ -26,13 +26,36 @@ class Message extends Component {
                     <img src="https://picsum.photos/id/1066/200"/>
                     <p>ini chat orang lain alskdna dlkasjd aslkdj asdjlaksd alskdjaskdln aslkdan sdkl dalksn</p>
                 </div>
-                <div className="chat-other"> 
-                    <img src="https://picsum.photos/id/1066/200"/>
-                    <p>ini chat orang lain alskdna dlkasjd aslkdj asdjlaksd alskdjaskdln aslkdan sdkl dalksn</p>
+                <div className="chat-me">  
+                    <p>ini chat dari sendiri nlasn aldknas alsdknasld laskdnlas aslkndlaskd </p>
                 </div>
                 <div className="chat-other"> 
                     <img src="https://picsum.photos/id/1066/200"/>
                     <p>ini chat orang lain alskdna dlkasjd aslkdj asdjlaksd alskdjaskdln aslkdan sdkl dalksn</p>
+                </div>
+                <div className="chat-me">  
+                    <p>ini chat dari sendiri nlasn aldknas alsdknasld laskdnlas aslkndlaskd </p>
+                </div>
+                <div className="chat-other"> 
+                    <img src="https://picsum.photos/id/1066/200"/>
+                    <p>ini chat orang lain alskdna dlkasjd aslkdj asdjlaksd alskdjaskdln aslkdan sdkl dalksn</p>
+                </div>
+                <div className="chat-me">  
+                    <p>ini chat dari sendiri nlasn aldknas alsdknasld laskdnlas aslkndlaskd </p>
+                </div>
+                <div className="chat-other"> 
+                    <img src="https://picsum.photos/id/1066/200"/>
+                    <p>ini chat orang lain alskdna dlkasjd aslkdj asdjlaksd alskdjaskdln aslkdan sdkl dalksn</p>
+                </div>
+                <div className="chat-me">  
+                    <p>ini chat dari sendiri nlasn aldknas alsdknasld laskdnlas aslkndlaskd </p>
+                </div>
+                <div className="chat-other"> 
+                    <img src="https://picsum.photos/id/1066/200"/>
+                    <p>ini chat orang lain alskdna dlkasjd aslkdj asdjlaksd alskdjaskdln aslkdan sdkl dalksn</p>
+                </div>
+                <div className="chat-me">  
+                    <p>ini chat dari sendiri nlasn aldknas alsdknasld laskdnlas aslkndlaskd </p>
                 </div>
             </div>
             <div className="input-message">
