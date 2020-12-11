@@ -1,14 +1,10 @@
 import './App.css';
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 
 import DirectMessage from './component/DirectMessage/DirectMessage';
+import Profile from './component/Profile/Profile';
 import Home from './component/home/Home';
 
 function App() {
@@ -31,7 +27,7 @@ function App() {
                         <Link className="sprite dropbtn" id="profile" onClick={Dropdown}></Link>
                         <div className="dropdown-content" id="profile-dropdown">
                             <span className="triangle"></span>
-                            <span className="dropdown-icon" id="dropdown-profile"></span><a className="dropdown-link" href="#"> Profile</a>
+                            <span className="dropdown-icon" id="dropdown-profile"></span><Link className="dropdown-link" to="profile"> Profile</Link>
                             <span className="dropdown-icon" id="dropdown-saved"></span><a className="dropdown-link" href="#"> Saved</a>
                             <span className="dropdown-icon" id="dropdown-setting"></span><a className="dropdown-link" href="#"> Settings</a>
                             <span className="dropdown-icon" id="dropdown-switch"></span><a className="dropdown-link" href="#"> Switch Accounts</a>
@@ -48,6 +44,9 @@ function App() {
                 </Route>
                 <Route path="/inbox">
                     <DirectMessage />
+                </Route>
+                <Route path="/profile">
+                    <Profile />
                 </Route>
             </Switch>
         </Router>

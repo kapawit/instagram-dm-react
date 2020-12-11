@@ -39,9 +39,11 @@ body {
 .smooth-image {
   transition: opacity 1s;
 }
+
 .image-visible {
   opacity: 1;
 }
+
 .image-hidden {
   opacity: 0;
 }
@@ -274,6 +276,7 @@ nav {
   content: "\2807";
   font-size: 3rem;
 }
+
 /* account-md */
 
 .account-md {
@@ -291,6 +294,7 @@ nav {
   font-size: 1.3rem;
   text-decoration: none;
 }
+
 .account-md p {
   font-size: 1.2rem;
   color: #b9b8b8;
@@ -311,6 +315,7 @@ nav {
   display: block;
   text-align: center;
 }
+
 .story-item p {
   font-size: 1.3rem;
 }

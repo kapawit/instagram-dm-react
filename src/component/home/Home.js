@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './Home.css';
-import RandomImg from '../Function'
+import {GetRandomImg} from '../Function'
 import Post from './Post';
 import Story from './Story';
 import Suggestion from './Suggestion';
@@ -23,7 +23,7 @@ class Home extends Component {
 
                         <div className="account-md">
                             <a href="#">
-                                <img className="img-profile-md" src={RandomImg(200)}/>
+                                <img className="img-profile-md" src={GetRandomImg(200)}/>
                             </a>
                             <div className="account-id-container"> 
                                 <a href="#">
