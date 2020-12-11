@@ -69,6 +69,30 @@ class Profile extends Component {
                 </div>
             </div>
             <Box/>
+            <div class="profile-footer">
+                <ul class="footer-container">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Top Accounts</a></li>
+                    <li><a href="#">Hastags</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+                <div class="footer-container">
+                    <select class="footer-language">
+                        <option>English</option>
+                        <option>Indonesia</option>
+                        <option>Jawa</option>
+                        <option>Sunda</option>
+                        <option>Isyarat</option>
+                    </select>
+                    <div class="footer-copyright">&copy 2020 Instagram from Facebook</div>
+                </div>
+            </div>
         </div>
     );
   }
