@@ -266,6 +266,7 @@ nav {
 /* btn more */
 .btn-more {
   padding: 5px;
+  cursor: pointer;
   transform: rotate(90deg);
 }
 

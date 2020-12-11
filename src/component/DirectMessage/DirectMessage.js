@@ -2,8 +2,6 @@ import React, {Component} from "react";
 import MessageContainer from "./MessageContainer";
 import ContactContainer from "./ContactContainer";
 import './DirectMessage.css';
-import RandomImg from '../../component/RandomImg'
-
 
 class DirectMessage extends Component {
 

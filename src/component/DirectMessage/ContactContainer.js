@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import GetRandomImg from "../RandomImg";
+import GetRandomImg from "../Function";
 
 class ContactContainer extends Component {
   render() {
