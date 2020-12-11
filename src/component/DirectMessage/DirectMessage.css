@@ -97,6 +97,7 @@
 /* Contact list */
 ul.contact {
   order: 3;
+  height: 100%;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -301,6 +302,7 @@ ul.contact {
 /* chatbox */
 .message-container .chat-box {
   order: 2;
+  height: 100%;
   padding: 20px;
   font-size: 1.3rem;
   overflow-y: scroll;
