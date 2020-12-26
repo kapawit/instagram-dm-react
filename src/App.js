@@ -3,9 +3,10 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 
-import DirectMessage from './component/DirectMessage/DirectMessage';
-import Profile from './component/Profile/Profile';
-import Home from './component/home/Home';
+import DirectMessage from './page/DirectMessage';
+import Profile from './page/Profile';
+import Home from './page/Home';
+import Explore from './page/Explore';
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
                 </Route>
                 <Route path="/inbox">
                     <DirectMessage />
+                </Route>
+                <Route path="/explore">
+                    <Explore />
                 </Route>
                 <Route path="/profile">
                     <Profile />

@@ -1,7 +1,6 @@
 import React, {Component} from "react";
-import {GetRandomImg,GetNumber} from "../Function";
-
-import './profile.css';
+import {GetRandomImg,GetNumber} from "./Function";
+import '../assets/css/profile.css';
 
 class Box extends Component {
 

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import Box from "./Box";
-import {GetRandomImg} from "../Function";
-import './profile.css';
+import Box from "../component/Box";
+import {GetRandomImg} from "../component/Function";
+import '../assets/css/profile.css';
 
 class Profile extends Component {
 

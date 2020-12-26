@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-import MessageContainer from "./MessageContainer";
-import ContactContainer from "./ContactContainer";
-import './DirectMessage.css';
+import MessageContainer from "../component/MessageContainer";
+import ContactContainer from "../component/ContactContainer";
+import '../assets/css/DirectMessage.css';
 
-class DirectMessage extends Component {
+class DirectMessage extends Component { 
 
   render() {
     return (

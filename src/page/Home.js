@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-import './Home.css';
-import {GetRandomImg} from '../Function'
-import Post from './Post';
-import Story from './Story';
-import Suggestion from './Suggestion';
+import '../assets/css/Home.css';
+import {GetRandomImg} from '../component/Function';
+import Post from '../component/Post';
+import Story from '../component/Story';
+import Suggestion from '../component/Suggestion';
 
 class Home extends Component {
     

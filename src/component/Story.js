@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import './Home.css';
-import {GetRandomImg} from '../Function'
+import '../assets/css/Home.css';
+import {GetRandomImg} from './Function'
 
 class Story extends Component {
     

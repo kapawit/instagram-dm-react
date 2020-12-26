@@ -1,0 +1,10 @@
+.explore-wrapper {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.explore-wrapper .explore-content {
+    padding: 85px 0px 0px;
+
+}
